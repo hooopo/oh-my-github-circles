@@ -1,0 +1,36 @@
+name: Generate circle.png
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    name: Generate circle.png
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Update source code
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: yarn build
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'sync circle.png'
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
+          add: '*.png'
