@@ -52,7 +52,7 @@ module.exports = async function render(config) {
 			ctx.clip();
 
 			const defaultAvatarUrl =
-				"https://abs.twimg.com/sticky/default_profile_images/default_profile_200x200.png";
+				"https://avatars.githubusercontent.com/in/15368?s=64&v=4";
 			const avatarUrl = users[i].avatar || defaultAvatarUrl;
 
 			const img = await loadImage(avatarUrl);
