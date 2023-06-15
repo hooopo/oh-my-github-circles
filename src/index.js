@@ -69,13 +69,55 @@ async function main() {
 		from followers  
 		join curr_user on curr_user.id = followers.user_id 
 		join users on followers.target_user_id = users.id
+	),
+
+	pr as (
+		SELECT users.avatar_url, users.login AS screen_name, COUNT(*) * 0.5 AS score
+		FROM pull_requests AS i
+		JOIN repos ON repos.id = i.repo_id
+		JOIN users ON users.id = repos.user_id
+		GROUP BY users.avatar_url, users.login
+	),
+
+	issue as (
+		SELECT users.avatar_url, users.login AS screen_name, COUNT(*) * 0.5 AS score
+		FROM issues AS i
+		JOIN repos ON repos.id = i.repo_id
+		JOIN users ON users.id = repos.user_id
+		GROUP BY users.avatar_url, users.login
+	),
+
+	star as (
+		SELECT users.avatar_url, users.login AS screen_name, COUNT(*) * 0.5 AS score
+		FROM starred_repos AS i
+		JOIN repos ON repos.id = i.repo_id
+		JOIN users ON users.id = repos.user_id
+		GROUP BY users.avatar_url, users.login
 	)
 	
 	select users.avatar_url as avatar, users.login as screen_name
 	from users
 	left join follow on follow.screen_name = users.login 
 	left join follower on follower.screen_name = users.login
-	order by (COALESCE(follow.score, 0) + COALESCE(follower.score, 0)) desc, users.followers_count desc
+	left join pr on pr.screen_name = users.login
+	left join issue on issue.screen_name = users.login
+	left join star on star.screen_name = users.login
+	order by (
+		COALESCE(follow.score, 0) + 
+		COALESCE(follower.score, 0) +
+		LEAST(COALESCE(pr.score, 0), 1.6) +
+		LEAST(COALESCE(issue.score, 0), 1.6) +
+		LEAST(COALESCE(star.score, 0), 1.5) +
+		COALESCE(
+			CASE
+					WHEN follow.score IS NOT NULL AND follower.score IS NOT NULL THEN 3
+					WHEN follow.score IS NOT NULL THEN 1
+					WHEN follower.score IS NOT NULL THEN 1
+					ELSE 0
+			END,
+			0
+		)
+		) desc, users.followers_count desc
 	limit 49
 	`;
   const results = await getQueryResults(sqlQuery);
