@@ -22,6 +22,7 @@ jobs:
           user-login: ${{ secrets.USER_LOGIN || github.repository_owner }}
   run:
     name: Generate circle.png
+    needs: github_personal_pipeline
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
