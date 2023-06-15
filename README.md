@@ -1,41 +1,34 @@
 # Oh My GitHub Circles
 
-`oh-my-github-circles` is an open-source repository that generates GitHub user circles for any given user by leveraging a GitHub Action to run the script. It is based on the [oh-my-github-pipeline](https://github.com/hooopo/oh-my-github-pipeline) repo and provides an easy way to sync data from a database, then generate a beautiful circle.png file.
+`Oh My GitHub Circles` is a captivating visualization tool designed to showcase a user's friends on GitHub in a creatively arranged circle layout within an image. The friends are ranked based on various interaction metrics, fostering a sense of connection and community among GitHub users. This visually appealing image can be shared on social media or incorporated into your GitHub README profile to exhibit your network and interactions.
 
 ![](/circle.png)
 
+## How it works
 
-## Features
-* Automatically generates user circles based on GitHub details
-* Syncs data with a specified database
-* Requires only minimal configuration
-* Uses GitHub Actions to run the script
+This tool visualizes a user's friends on GitHub in a circle arrangement within an image. Friends are ranked based on various interactions and their follower count. Assuming User A is the target user, the ranking for User B comprises the following points:
 
-## Getting Started
+1. If B follows A, B gains 1 point.
+2. If A follows B, B gains 1 point.
+3. If A and B mutually follow each other, B gets an additional bonus of 1 point (totaling 3 points).
 
-### Prerequisites
+Besides the following interactions, the ranking also considers:
 
-To use `oh-my-github-circles`, you will need the following:
+1. Pull request (PR) score - limited to a maximum of 1.6
+2. Issue score - limited to a maximum of 1.6
+3. Repository star score - limited to a maximum of 1.5
 
-* GitHub account
-* Database URL for syncing and retrieving data
+The ranking is established through these steps:
 
-### Setup
+1. Calculate the sum of points obtained from following interactions, along with the PR, issue, and star scores.
+2. Sort the friends in descending order using the combined score, and then by the user's follower count (also in descending order).
+3. Display up to 49 friends based on this ranking in the generated image.
 
-1. **Fork the repo**: Click the "Fork" button in the top-right corner of the `oh-my-github-circles` repo on GitHub.
-2. **Enable GitHub Actions**: Navigate to the "Actions" tab on your forked repo and enable GitHub Actions if it's not already enabled.
-3. **Configure Secrets**: In your forked repo, go to "Settings" > "Secrets" and click "New repository secret". Add the following secret:
+To summarize, `oh-my-github-cicles` organizes a user's friends on GitHub in a circle layout image. The ranking of friends takes into account following relationships, PR, issue, and star scores, and the user's follower count.
 
-   ```
-   Name: DATABASE_URL
-   Value: your_database_url
-   ```
+## How to setup
 
-   Replace `your_database_url` with the actual URL of your database.
-
-4. **Test the Action**: The GitHub Action should run automatically on every push to the repository. You can check the "Actions" tab to see the progress and view detailed logs.
-
-5. **Access the circle.png file**: After the script has completed, you will find the generated `circle.png` file in the repository. To see the GitHub user circle, simply open the file.
+TODO
 
 ## Contributing
 
