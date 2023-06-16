@@ -58,7 +58,8 @@ Then
 
 4. **Manually trigger the first GitHub Action**: Go back to the "Actions" tab in your forked repository, choose the workflow you want to run, and click the "Run workflow" button to manually trigger it for the first time.
 
-⚠️ _Image flag: Screenshot showing how to manually trigger a GitHub Action._
+![image](https://github.com/hooopo/oh-my-github-circles/assets/63877/d883ab0b-e9d6-40a7-a9a5-dd3ae87c58fc)
+
 
 5. **Get the image URL or copy the image**: Once the GitHub Action has been successfully executed, you can either get the image URL or copy the generated image directly.
 
