@@ -62,8 +62,6 @@ Next:
 
 Follow these steps, and you'll successfully set up "Oh My GitHub Circles" for your repository.
 
-Here's a Special Thanks section for "Oh My GitHub Circles":
-
 ## Special Thanks
 
 _Oh My GitHub Circles_ was inspired by [**Chirpty**](https://chirpty.com/), a similar visualization project for Twitter profiles. We would also like to express our gratitude to the following projects and services that played a crucial role in the development and implementation of _Oh My GitHub Circles_:
