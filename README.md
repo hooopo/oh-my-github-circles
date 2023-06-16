@@ -43,7 +43,8 @@ To summarize, `oh-my-github-cicles` organizes a user's friends on GitHub in a ci
    
    3.3. `ACCESS_TOKEN`: Create a GitHub Personal Access Token by following [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
-⚠️ _Image flag: Screenshot illustrating how to add secrets._
+![image](https://github.com/hooopo/oh-my-github-circles/assets/63877/9428a16a-a6ae-409d-8537-6cc78bf97ce2)
+
 
 3. **Enable GitHub Actions**: Navigate to the "Actions" tab in your forked repository, and click on the green "I understand my workflows, go ahead and enable them" button to enable GitHub Actions.
 
