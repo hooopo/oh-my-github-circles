@@ -74,7 +74,7 @@ _Oh My GitHub Circles_ was inspired by [**Chirpty**](https://chirpty.com/), a si
 
 There is also a sister project called [repo-contributor-circles](https://github.com/hooopo/repo-contributor-circles), which is used to generate circle images of repository contributors, and is still under development):
 
-![](https://raw.githubusercontent.com/hooopo/repo-contributor-circles/main/circle.png)
+![](https://raw.githubusercontent.com/hooopo/repo-contributor-circles/main/circle.png?vv=1)
 
 ## Contributing
 
