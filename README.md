@@ -30,9 +30,6 @@ To summarize, `oh-my-github-cicles` organizes a user's friends on GitHub in a ci
 
 1. **Fork the repository**: Start by forking this repository to your own GitHub account using the "Fork" button at the top right corner of the repository page.
 
-![image](https://github.com/hooopo/oh-my-github-circles/assets/63877/10461d92-67c8-492b-990d-60181ede7b0b)
-
-
 2. **Fill secrets for GitHub Actions**: In the "Settings" tab of your forked repository, navigate to "Secrets" and add the following secrets:
 
    3.1. `USER_LOGIN`: Your target GitHub username.
