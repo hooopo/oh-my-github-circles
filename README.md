@@ -62,6 +62,18 @@ Next:
 
 Follow these steps, and you'll successfully set up "Oh My GitHub Circles" for your repository.
 
+Here's a Special Thanks section for "Oh My GitHub Circles":
+
+## Special Thanks
+
+_Oh My GitHub Circles_ was inspired by [**Chirpty**](https://chirpty.com/), a similar visualization project for Twitter profiles. We would also like to express our gratitude to the following projects and services that played a crucial role in the development and implementation of _Oh My GitHub Circles_:
+
+1. **oh-my-github-pipeline**: Our project depends on the [oh-my-github-pipeline](https://github.com/hooopo/oh-my-github-pipeline) which is responsible for processing and transforming the GitHub user data.
+
+2. **GitHub Actions**: [GitHub Actions](https://github.com/features/actions) automates the entire workflow of our project, making it easy to build, test, and deploy the visualizations on demand.
+
+3. **TiDB Serverless**: We leverage [TiDB Serverless](https://tidbcloud.com/?utm_source=github_circles&utm_medium=github_circles&utm_campaign=github_circles) for seamless database management and highly efficient data handling, enabling a smooth user experience.
+
 ## Contributing
 
 Contributions are always welcome! Feel free to fork the repo, make changes, and create pull requests.
