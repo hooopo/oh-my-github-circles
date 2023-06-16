@@ -48,7 +48,8 @@ To summarize, `oh-my-github-cicles` organizes a user's friends on GitHub in a ci
 
 3. **Enable GitHub Actions**: Navigate to the "Actions" tab in your forked repository, and click on the green "I understand my workflows, go ahead and enable them" button to enable GitHub Actions.
 
-⚠️ _Image flag: Screenshot showing how to enable GitHub Actions._
+![image](https://github.com/hooopo/oh-my-github-circles/assets/63877/5b1b31b8-bfc7-416d-917c-8e6403b419ac)
+
 
 4. **Manually trigger the first GitHub Action**: Go back to the "Actions" tab in your forked repository, choose the workflow you want to run, and click the "Run workflow" button to manually trigger it for the first time.
 
