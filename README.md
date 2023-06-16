@@ -26,9 +26,39 @@ The ranking is established through these steps:
 
 To summarize, `oh-my-github-cicles` organizes a user's friends on GitHub in a circle layout image. The ranking of friends takes into account following relationships, PR, issue, and star scores, and the user's follower count.
 
-## How to setup
+## How to setup "Oh My GitHub Circles" for youself
 
-TODO
+1. **Fork the repository**: Start by forking this repository to your own GitHub account using the "Fork" button at the top right corner of the repository page.
+
+⚠️ _Image flag: Screenshot illustrating how to fork the repository._
+
+2. **Fill secrets for GitHub Actions**: In the "Settings" tab of your forked repository, navigate to "Secrets" and add the following secrets:
+
+   3.1. `USER_LOGIN`: Your target GitHub username.
+   
+   3.2. `DATABASE_URL`: Register for TiDB Serverless and get the connection info. You can register here: [TiDB Serverless Registration](https://tidbcloud.com/?utm_source=github_circles&utm_medium=github_circles&utm_campaign=github_circles)
+
+   Format of the connection info: `mysql2://<username>:<password>@<host>:<port>/<database>`
+   
+   3.3. `ACCESS_TOKEN`: Create a GitHub Personal Access Token by following [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+
+⚠️ _Image flag: Screenshot illustrating how to add secrets._
+
+3. **Enable GitHub Actions**: Navigate to the "Actions" tab in your forked repository, and click on the green "I understand my workflows, go ahead and enable them" button to enable GitHub Actions.
+
+⚠️ _Image flag: Screenshot showing how to enable GitHub Actions._
+
+4. **Manually trigger the first GitHub Action**: Go back to the "Actions" tab in your forked repository, choose the workflow you want to run, and click the "Run workflow" button to manually trigger it for the first time.
+
+⚠️ _Image flag: Screenshot showing how to manually trigger a GitHub Action._
+
+5. **Get the image URL or copy the image**: Once the GitHub Action has been successfully executed, you can either get the image URL or copy the generated image directly.
+
+⚠️ _Image flag: Screenshot illustrating how to access the image._
+
+Follow these steps, and you'll successfully set up "Oh My GitHub Circles" for your repository.
+
+For each _Image flag_, make sure to include a screenshot or image that clearly captures the action described in that step to help users better understand the process.
 
 ## Contributing
 
