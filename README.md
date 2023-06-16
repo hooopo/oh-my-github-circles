@@ -50,6 +50,11 @@ To summarize, `oh-my-github-cicles` organizes a user's friends on GitHub in a ci
 
 ![image](https://github.com/hooopo/oh-my-github-circles/assets/63877/5b1b31b8-bfc7-416d-917c-8e6403b419ac)
 
+Then
+
+![image](https://github.com/hooopo/oh-my-github-circles/assets/63877/8de4ff28-7e42-418c-bb2c-51157569ee10)
+
+
 
 4. **Manually trigger the first GitHub Action**: Go back to the "Actions" tab in your forked repository, choose the workflow you want to run, and click the "Run workflow" button to manually trigger it for the first time.
 
