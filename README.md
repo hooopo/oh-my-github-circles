@@ -72,6 +72,10 @@ _Oh My GitHub Circles_ was inspired by [**Chirpty**](https://chirpty.com/), a si
 
 3. **TiDB Serverless**: We leverage [TiDB Serverless](https://tidbcloud.com/?utm_source=github_circles&utm_medium=github_circles&utm_campaign=github_circles) for seamless database management and highly efficient data handling, enabling a smooth user experience.
 
+There is also a sister project called [repo-contributor-circles](https://github.com/hooopo/repo-contributor-circles), which is used to generate circle images of repository contributors, and is still under development):
+
+![](https://raw.githubusercontent.com/hooopo/repo-contributor-circles/main/circle.png)
+
 ## Contributing
 
 Contributions are always welcome! Feel free to fork the repo, make changes, and create pull requests.
