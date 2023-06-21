@@ -2,7 +2,10 @@
 
 `Oh My GitHub Circles` is a captivating visualization tool designed to showcase a user's friends on GitHub in a creatively arranged circle layout within an image. The friends are ranked based on various interaction metrics, fostering a sense of connection and community among GitHub users. This visually appealing image can be shared on social media or incorporated into your GitHub README profile to exhibit your network and interactions.
 
-![](/circle.png)
+
+![image](https://github.com/hooopo/oh-my-github-circles/assets/63877/355f958f-b9f8-4478-8021-48d2dd7958c8)
+
+
 
 ## How it works
 
