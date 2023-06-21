@@ -41,7 +41,7 @@ To summarize, `oh-my-github-cicles` organizes a user's friends on GitHub in a ci
 
    Format of the connection info: `mysql2://<username>:<password>@<host>:<port>/<database>`
    
-   3.3. `ACCESS_TOKEN`: Create a GitHub Personal Access Token by following [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+   3.3. `ACCESS_TOKEN`: Create a GitHub Personal Access Token by following [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). ⚠️ If you fork this project to your personal account, the ACCESS_TOKEN is optional. However, if you fork this project to an organization, the ACCESS_TOKEN cannot be omitted.
 
 ![image](https://github.com/hooopo/oh-my-github-circles/assets/63877/9428a16a-a6ae-409d-8537-6cc78bf97ce2)
 
