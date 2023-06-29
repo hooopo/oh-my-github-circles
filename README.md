@@ -79,6 +79,17 @@ There is also a sister project called [repo-contributor-circles](https://github.
 
 ![](https://raw.githubusercontent.com/hooopo/repo-contributor-circles/main/circle.png?vv=1)
 
+## Related repos
+
+* [Oh My GitHub Circles](https://github.com/hooopo/oh-my-github-circles)
+* [Oh My GitHub Pipeline](https://github.com/hooopo/oh-my-github-pipeline)
+* [Repo Contributor Circles](https://github.com/hooopo/repo-contributor-circles)
+* [Repo Track Pipeline](https://github.com/hooopo/repo-track-pipeline)
+* [OSSInsight Lite](https://github.com/pingcap/ossinsight-lite)
+* [OSSInsight](https://github.com/pingcap/ossinsight)
+* [Hackernews Insight](https://github.com/hooopo/hackernews-insight)
+* [Oh My GitHub Dashboard](https://github.com/hooopo/oh-my-github-dashboard)
+
 ## Contributing
 
 Contributions are always welcome! Feel free to fork the repo, make changes, and create pull requests.
